@@ -1,0 +1,4 @@
+name: BedrockReplacer
+version: 1.0
+main: io.github.adamson.BedrockReplacer
+api-version: 1.19
