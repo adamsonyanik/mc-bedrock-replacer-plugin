@@ -78,7 +78,7 @@ public class BedrockBreakEventListener implements Listener {
             replacedBlocks++;
         }
 
-        if (!openList.isEmpty()) {
+        if (!openList.isEmpty() && replacedBlocks < 1000000000) {
             long finalReplacedBlocks = replacedBlocks;
             Bukkit.getScheduler().runTaskLater(BedrockReplacer.getPlugin(BedrockReplacer.class), () -> {
                 destroyBedrock(openList, player, finalReplacedBlocks);
